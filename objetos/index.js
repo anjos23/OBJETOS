@@ -1,4 +1,4 @@
-
+/*
 const professores = [
 {nome:'andrei', modulo : 1},
 {nome:'fernado',modulo : 2}
@@ -36,3 +36,18 @@ console.log(novoFilme.elenco[2], ' como' , novoFilme.personagensFilme[2]);
 console.log(novoFilme.elenco[3], ' como' , novoFilme.personagensFilme[3]);
 console.log(novoFilme.elenco[4], ' como' , novoFilme.personagensFilme[4]); 
 
+*/
+ const usuarioTeste = {
+    nome : 'pedro',
+    idade:25,
+}
+novoUsuario(usuarioTeste)
+function novoUsuario(pessoa){
+    const pessoaNova = {
+        ...pessoa,
+        comida: ['alface', 'beterraba'],
+        amigo:{nome:'thales',idade: 35},
+    }
+return pessoaNova;
+}let teste = novoUsuario(usuarioTeste)
+console.log(`o nome da pessoa é ${teste.nome} e suas comidae preferidas são ${teste.comida[0]}e ${teste.comidas[1]}`)
