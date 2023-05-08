@@ -36,7 +36,7 @@ console.log(novoFilme.elenco[2], ' como' , novoFilme.personagensFilme[2]);
 console.log(novoFilme.elenco[3], ' como' , novoFilme.personagensFilme[3]);
 console.log(novoFilme.elenco[4], ' como' , novoFilme.personagensFilme[4]); 
 
-*/
+
  const usuarioTeste = {
     nome : 'pedro',
     idade:25,
@@ -51,3 +51,63 @@ function novoUsuario(pessoa){
 return pessoaNova;
 }let teste = novoUsuario(usuarioTeste)
 console.log(`o nome da pessoa é ${teste.nome} e suas comidae preferidas são ${teste.comida[0]}e ${teste.comidas[1]}`)
+*/
+//condicoes :
+/*
+let ensinoMedio = prompt('concluiu ensino medio?[sim /não]')
+let idade = Number (prompt('sua idade:'))
+let outraFaculdade = prompt('Esta cursando outra faculdade?')
+let resultado = verificaFaculdade(ensinoMedio, idade, outraFaculdade);
+ console.log(resultado)
+ alert(resultado)
+function verificaFaculdade(ensinoMedio, idade, outraFaculdade){
+    let mensagem = '';
+    if (ensinoMedio.toUpperCase() === 'SIM'&& idade >=18 && outraFaculdade.toUpperCase() === 'NAO'  )//deixar tudo em caixa alta
+     { mensagem = 'seja bem vindo!'
+
+    }else { mensagem = 'Voce nao esta apto para entrar na faculdade'
+
+    }
+    return mensagem
+
+}
+let pais = prompt('digite o pais que vc nasceu:');
+
+switch(pais) {
+    case 'Brasil':
+        console.log ('brasileiro');
+        break;
+        case 'lichtein':
+        console.log ('lichteinense');
+        break;
+        case 'croacia':
+        console.log ('croassan');
+        break;
+        default:
+                console.log('Nacionalidade não encontrada ') ;
+                break
+}*/
+let algarismo1 = Number(prompt('numero 1:'));
+let algarismo2 = Number(prompt('numero 2:'));
+let opcao = Number(prompt('Digite uma opção :\n1- soma\n2-subtração\n3-multiplicação\n4- Divisão'));
+switch(opcao){
+    case 1:
+        let soma = algarismo1 + algarismo2;
+        console.log(soma);
+        break
+        case 2:
+            let subtracao = algarismo1 - algarismo2;
+            console.log(subtracao);
+            break
+            case 3:
+                let multiplicação = algarismo1 * algarismo2;
+                console.log(multiplicação);
+                break
+                case 4:
+                    let Divisão = algarismo1 / algarismo2;
+                    console.log(Divisão);
+                    break
+    default:
+        console.log('Opção não encontrada');
+        break;
+}
